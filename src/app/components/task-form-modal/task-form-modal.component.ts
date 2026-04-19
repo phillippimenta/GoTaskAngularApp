@@ -1,0 +1,38 @@
+import { DIALOG_DATA } from "@angular/cdk/dialog";
+import { Component, inject } from '@angular/core';
+import { ITaskFormModalData } from "../../interfaces/task-form-modal-data.interface";
+import { FormControl, FormGroup, ReactiveFormsModule, Validators } from "@angular/forms";
+
+@Component({
+  selector: 'app-task-form-modal',
+  imports: [ReactiveFormsModule],
+  templateUrl: './task-form-modal.component.html',
+  styleUrl: './task-form-modal.component.css'
+})
+export class TaskFormModalComponent {
+
+  readonly _data: ITaskFormModalData = inject(DIALOG_DATA);
+
+  taskForm: FormGroup = new FormGroup({
+    name: new FormControl(this._data.formValues.name, [Validators.required, Validators.minLength(10)]),
+    description: new FormControl(this._data.formValues.description, [Validators.required, Validators.minLength(10)])
+  });
+
+  readonly textInputClasses: {
+    enabled: string;
+  } = {
+      enabled: 'w-full border border-[#D1D5DB] p-3 rounded-lg text-sm font-light text-[#393C43]'
+    };
+
+  readonly submitButtonClasses: {
+    enabled: string;
+    disabled: string;
+  } = {
+      enabled: 'bg-[#2A89EF] active:translate-y-1 transition-transform duration-75 shadow-md shadow-blue-500/50',
+      disabled: 'bg-[#D7D8D8]',
+    };
+
+  onFormSubmit() {
+
+  }
+}
