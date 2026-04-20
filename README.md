@@ -1,59 +1,74 @@
-# ProjetoGoTask
+# GoTask Angular App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.9.
+Este repositório contém o projeto GoTask Angular App, desenvolvido como parte do curso de Angular da Rocketseat, com o objetivo de aprofundar conhecimentos em front-end moderno.
 
-## Development server
+## Sobre o projeto
 
-To start a local development server, run:
+A aplicação foi construída durante o curso, acompanhando a evolução dos conceitos ensinados, incluindo:
+
+- Estruturação de aplicações com Angular
+- Componentização e reutilização de código
+- Gerenciamento de estado e formulários
+- Boas práticas de organização e arquitetura front-end
+- Integração de UI com lógica de negócio
+
+O projeto simula uma aplicação de gerenciamento de tarefas, servindo como base prática para consolidar conhecimentos em Angular.
+
+## Objetivo
+
+Este repositório tem como foco:
+
+- Praticar conceitos modernos de desenvolvimento front-end
+- Evoluir na utilização do framework Angular
+- Construir uma base sólida para aplicações escaláveis
+- Servir como material de estudo e portfólio
+
+## Contexto
+
+Este projeto faz parte do meu processo de evolução como desenvolvedor, buscando aprofundamento em tecnologias modernas de front-end, complementando minha experiência com desenvolvimento backend.
+
+### Tecnologias utilizadas
+
+- Angular 19.2.9
+- Angular Material UI Component Library 19.2.9
+- TypeScript 5.7.2
+- HTML5
+- CSS3
+- Tailwind 4.1.4
+
+## Como executar o projeto
+
+\# Clone o repositório
+
+```bash
+git clone https://github.com/phillippimenta/GoTaskAngularApp.git
+```
+
+\# Acesse a pasta do projeto
+
+```bash
+cd GoTaskAngularApp
+```
+
+\# Instale as dependências
+
+```bash
+npm install
+```
+
+\# Execute a aplicação
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+A aplicação estará disponível em:
+http://localhost:4200
 
-## Code scaffolding
+## Aviso
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Este projeto é destinado exclusivamente para fins de estudo e aprendizado, não sendo uma aplicação pronta para produção.
 
-```bash
-ng generate component component-name
-```
+## Autor
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Phillip Eduardo Pimenta Forte
